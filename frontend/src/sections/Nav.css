@@ -1,0 +1,12 @@
+.navbar {
+    /* position: fixed; */
+    top: 0;
+    position: sticky;
+    background-color: #fff;
+    z-index: 1;
+   
+    left: 10%;
+}
+.navbar img {
+    background-color: #fff;
+}
