@@ -17,7 +17,7 @@ function StoreLinks({ type }: StoreLinksProps) {
   const navigate = useNavigate()
   if (type === BtnTypes.Standard) {
     return (
-      <div className="mt-10 hidden justify-center space-x-2 sm:flex md:justify-normal">
+      <div className="mt-10 flex justify-center space-x-2 sm:flex md:justify-normal">
         <StoreLink
           href="/login"
           lowerText="LOGIN"

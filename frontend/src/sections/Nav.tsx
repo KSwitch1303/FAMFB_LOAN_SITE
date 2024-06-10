@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import famfb from "../assets/logos/famfb_logo.png";
 import ButtonLink from "../common/ButtonLink";
 import { Link, useLocation,useNavigate } from "react-router-dom";
+import StoreLinks, { BtnTypes } from "../common/StoreLinks";
 import './Nav.css'
 function Nav() {
   const location = useLocation()
@@ -39,11 +40,15 @@ function Nav() {
               </div>
             </div>
             
-            
+            {/* <StoreLinks type={BtnTypes.Standard} /> */}
 
               <Disclosure.Button className="rounded-md p-2 text-gray-500 hover:bg-gray-700 hover:text-white sm:hidden">
               {open ? (
+                <>
                 <XMarkIcon className="block h-6 w-6" />
+                
+                </>
+                
               ) : (
                 <Bars3Icon className="block h-6 w-6" />
               )}
