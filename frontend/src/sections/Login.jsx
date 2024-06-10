@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import axios from 'axios'
 import { UserContext } from "../contexts/UserContext";
-// eslint-disable-next-line no-undef
-const apiUrl = process.env.REACT_APP_API_URL;
+
+const apiUrl = import.meta.env.VITE_API_URL
 function Login() {
     const navigate = useNavigate()
     const { setUserId, setLoggedIn, setFirstName, setLastName, setEmail, setAccountBalance, setLoanAmount, setCreditLimit}  = useContext(UserContext);

@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { UserContext } from '../contexts/UserContext';
 const Statistics = () => {
-  const apiUrl = process.env.REACT_APP_API_URL;
+  // eslint-disable-next-line no-undef
+  const apiUrl = import.meta.env.VITE_API_URL
   const { userId} = useContext(UserContext);
   const [transactions, setTransactions] = useState([]);
   useEffect(() => {

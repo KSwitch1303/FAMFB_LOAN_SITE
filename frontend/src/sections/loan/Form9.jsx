@@ -3,8 +3,8 @@ import { LoanContext } from '../../contexts/LoanContext';
 import { UserContext } from '../../contexts/UserContext';
 import axios from 'axios';
 import './Loanform.css'
-// eslint-disable-next-line no-undef
-const apiUrl = process.env.REACT_APP_API_URL
+
+const apiUrl = import.meta.env.VITE_API_URL;
 const Form9 = () => {
   const {purpose, borrowAmmount, loanDOB, residence, employmentStatus, annualIncome, zipCode, streetAddress, firstName, setFirstName, lastName, setLastName, email, setEmail, phoneNumber, setPhoneNumber, loanTerm, setLoanTerm, maritalStatus, setFormnum} = useContext(LoanContext);
   const { userId } = useContext(UserContext);
