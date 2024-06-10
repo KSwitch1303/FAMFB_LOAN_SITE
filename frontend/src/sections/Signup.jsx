@@ -2,7 +2,8 @@ import './Signup.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
-const apiUrl = 'http://localhost:5000'
+// eslint-disable-next-line no-undef
+const apiUrl = process.env.REACT_APP_API_URL
 
 function Signup() {
   const navigate = useNavigate()
